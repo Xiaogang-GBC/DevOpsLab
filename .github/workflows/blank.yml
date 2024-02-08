@@ -20,6 +20,13 @@ jobs:
     steps:
       - name: Output a message
         run: echo "Action Completed! :)"
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with: 
+          name: assets
+          path: dist
+    
 # jobs:
   # This workflow contains a single job called "build"
   # build:
