@@ -13,7 +13,7 @@ test("Subtraction of 2 numbers", () => {
 // arrange and act
 var result = mathOperations.diff(10,2)
 
-// assert
+// assert test
 expect(result).toBe(8);
 });
 
