@@ -11,8 +11,9 @@ jobs:                                       # create job called "test" to perfor
   test:  
     runs-on: ubuntu-latest.                 # this job will run on the latest version of Ubuntu
     steps:                                  # list of steps that need to be taken when Unit Tests is triggered 
-    - uses: actions/checkout@v3             # check out code from repository
-    - name: run my one-line script             
+    - uses: actions/checkout@v3       # check out code from repository
+    - name: run my one-line script    
+          echo Hello! I am a one-line greeting!
     - name: run my multiple-line script             
           echo Hello Xiaogang Dong! 
-          echo It's a brand new day! 
+          echo It is a brand new day! 
