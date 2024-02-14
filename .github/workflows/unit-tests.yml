@@ -7,13 +7,15 @@ on:
     branches: ["master"]
   workflow_dispatch:
 
-jobs:                                       # create job called "test" to perform Unit Tests 
+jobs:                                       # Create job called "test" to perform Unit Tests 
   test:  
-    runs-on: ubuntu-latest.                 # this job will run on the latest version of Ubuntu
-    steps:                                  # list of steps that need to be taken when Unit Tests is triggered 
-    - uses: actions/checkout@v3       # check out code from repository
-    - name: run my one-line script    
+    runs-on: ubuntu-latest                  # This job will run on the latest version of Ubuntu
+    steps:                                  # List of steps that need to be taken when Unit Tests is triggered 
+      - uses: actions/checkout@v3           # Check out code from repository
+      - name: Run my one-line script
+        run: |
           echo Hello! I am a one-line greeting!
-    - name: run my multiple-line script             
+      - name: Run my multiple-line script
+        run: |
           echo Hello Xiaogang Dong! 
-          echo It is a brand new day! 
+          echo It is a brand new day!
