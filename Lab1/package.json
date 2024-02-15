@@ -3,7 +3,12 @@
     "description": "This is my first app",
     "scripts": {
           "test": "jest",
-          "build": "mkdir -p dist && cp *.js dist/"
+          "build": "mkdir -p dist && cp *.js dist/",
+          "lint": "npx eslint Lab1/*.js",
+          "style": "prettier --check Lab1/*.js",
+          "format": "prettier --write Lab1/*.js",
+          "test": "jest Lab1",
+          "prepare": "husky install Lab1"
     },
     "dependencies": {
       "jest": "^29.5.0",
