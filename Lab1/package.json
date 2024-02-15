@@ -2,7 +2,8 @@
     "name": "my-app",
     "description": "This is my first app",
     "scripts": {
-          "test": "jest" 
+          "test": "jest",
+          "build": "mkdir -p dist && cp *.js dist/"
     },
     "dependencies": {
       "jest": "^29.5.0",
