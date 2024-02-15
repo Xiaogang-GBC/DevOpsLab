@@ -28,3 +28,11 @@ jobs:                                       # Create job called "test" to perfor
       - name: Run Tests                       # run Unit Tests using Jest
         run: npx yarn test
         working-directory: ./Lab1 
+      - name: Build project
+        run: npx yarn build
+        working-directory: ./Lab1 
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: build-artifact
+          path: ./Lab1/dist/
