@@ -21,6 +21,7 @@ jobs:                                       # Create job called "test" to perfor
           echo It is a brand new day!
       - name: Install dependencies            # install all dependencies needed for Unit Tests (ex. Jest) 
         run: npx yarn    
+        working-directory: ./Lab1 
       - uses: actions/download-artifact@v3    # download compiled code from build and make it available for Unit Tests 
         with:
           path: dist
