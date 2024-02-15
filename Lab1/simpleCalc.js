@@ -1,10 +1,10 @@
 "use strict";
 // start
-     var mathOperations = {
+var mathOperations = {
 sum: function(a,b) {
     return a + b;
 },
-asdfasdfdiff: function (a,b) {
+diff: function (a,b) {
 return a - b;
 },
 product: function (a,b) {
