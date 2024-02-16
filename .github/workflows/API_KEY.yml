@@ -8,13 +8,7 @@ on:
 jobs:
   my_secret_key:
     runs-on: ubuntu-latest
-    env:
-      API_KEY: ${{ secrets.MY_API_KEY }}
-
+    environment: MY ENV
     steps:
-      - name: Check out code
-        uses: actions/checkout@v2
-
-      - name: Check my secret key
-        run: |
-          echo "My Env API Key is: $MY_API_KEY"
+      - name: Print the API Key
+        run: echo "API Key is ${{ secrets.MY_API_KEY }}"
