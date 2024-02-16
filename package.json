@@ -4,7 +4,7 @@
     "scripts": {
         "test": "jest",
         "build": "mkdir -p dist && cp *.js dist/",
-        "style": "prettier --check Lab1/simpleCalc.js && echo 'Prettier check successful.' || (echo 'Prettier check failed. Please fix the formatting issues.' && exit 1)"
+        "style": "prettier --check Lab1/simpleCalc.js && echo 'Prettier check successful.' || (echo 'Prettier check failed.' && exit 1)"
     },
     "dependencies": {
         "husky": "^9.0.11",
