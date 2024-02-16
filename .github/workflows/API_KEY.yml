@@ -8,7 +8,8 @@ on:
 jobs:
   my_secret_key:
     runs-on: ubuntu-latest
-    environment: MY ENV
+    env: 
+      MY_API_KEY: ${{ vars.MY_API_KEY }}
     steps:
       - name: Print the API Key
         run: echo "API Key is ${{ env.MY_API_KEY }}"
