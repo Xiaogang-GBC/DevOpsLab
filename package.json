@@ -2,24 +2,22 @@
     "name": "my-app",
     "description": "This is my first app",
     "scripts": {
-          "test": "jest",
-          "build": "mkdir -p dist && cp *.js dist/",
-          "style": "prettier --check src/simpleCalc.js && echo 'Prettier check successful.' || (echo 'Prettier check failed. Please fix the formatting issues.' && exit 1)"
-
+        "test": "jest",
+        "build": "mkdir -p dist && cp *.js dist/",
+        "style": "prettier --check Lab1/simpleCalc.js && echo 'Prettier check successful.' || (echo 'Prettier check failed. Please fix the formatting issues.' && exit 1)"
     },
     "dependencies": {
-      "jest": "^29.5.0",
-      "jslint": "^0.12.1",
-      "yarn": "^1.22.19",
-      "husky": "^9.0.11",
-      "prettier": "^3.2.5"
+        "husky": "^9.0.11",
+        "jest": "^29.5.0",
+        "jslint": "^0.12.1",
+        "yarn": "^1.22.19"
     },
     "devDependencies": {
-      "eslint": "^8.42.0",
-      "eslint-config-standard": "^17.1.0",
-      "eslint-plugin-import": "^2.27.5",
-      "eslint-plugin-n": "^16.0.0",
-      "eslint-plugin-promise": "^6.1.1"
+        "eslint": "^8.42.0",
+        "eslint-config-standard": "^17.1.0",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-n": "^16.0.0",
+        "eslint-plugin-promise": "^6.1.1",
+        "prettier": "^3.2.5"
     }
-  }
-  
+}
