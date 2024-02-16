@@ -11,4 +11,4 @@ jobs:
     environment: MY ENV
     steps:
       - name: Print the API Key
-        run: echo "API Key is ${{ secrets.MY_API_KEY }}"
+        run: echo "API Key is ${{ env.MY_API_KEY }}"
