@@ -36,3 +36,5 @@ jobs:                                       # Create job called "test" to perfor
         with:
           name: build-artifact
           path: ./Lab1/dist/
+      - name: Run Style Checks
+        run: npm run style
