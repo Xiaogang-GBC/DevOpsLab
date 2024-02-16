@@ -9,5 +9,5 @@ jobs:
   my_secret_key:
     runs-on: ubuntu-latest
     steps:
-      - name: Print the API Key
-        run: echo "API Key is ${{ vars.MY_API_KEY }}"
+      - name: output my private API Key
+        run: echo "API Key is ${{ secrets.DONG_API_KEY }}"
